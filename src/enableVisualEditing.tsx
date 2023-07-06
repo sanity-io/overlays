@@ -1,5 +1,8 @@
 import { Root } from 'react-dom/client'
 
+/**
+ * @public
+ */
 export type DisableVisualEditing = () => void
 
 /**

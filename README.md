@@ -61,21 +61,25 @@ For more configuration options when working with Content Source Maps and the enh
 Ensure the overlay is only enabled in non-production environments.
 
 ```ts
-import { enableVisualEditing } from '@sanity/overlays'
+import { enableOverlays } from '@sanity/overlays'
 
-const disable = enableVisualEditing() // Enables Visual Editing overlay
+const disable = enableOverlays() // Enables Visual Editing overlay
 disable() // Disables Visual Editing overlay
 ```
 
 In React you could enable the feature in a `useEffect()` hook, where `disable()` will run on unmount:
 
 ```ts
-import { enableVisualEditing } from '@sanity/overlays'
+import { enableOverlays } from '@sanity/overlays'
 
-useEffect(enableVisualEditing, [])
+useEffect(enableOverlays, [])
 ```
 
 When enabled, you should see clickable "Edit in Sanity Studio" buttons for every element which contains encoded metadata from Content Source Maps.
+
+**Note**
+In the future, `enableOverlays` may enable more than just Visual Editing. If you do not want to have new features enabled by default,
+you should use the standalone `enableVisualEditing` function instead of `enableOverlays`.
 
 ## Manually configuring "Edit in Sanity Studio" elements
 
