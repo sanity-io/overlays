@@ -36,6 +36,8 @@ export function enableVisualEditing(): DisableVisualEditing {
 
     node = document.createElement('div')
     node.id = 'sanity-visual-editing'
+    node.style.position = 'relative'
+    node.style.zIndex = '2147483647'
     document.body.appendChild(node)
 
     const { createRoot } =
