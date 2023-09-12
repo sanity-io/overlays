@@ -5,6 +5,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/sanity-io/overlays/compare/v1.0.5...v1.0.6) (2023-09-12)
+
+### Bug Fixes
+
+- overlays not always rendering as top item or clickable ([#32](https://github.com/sanity-io/overlays/issues/32)) ([8d905a1](https://github.com/sanity-io/overlays/commit/8d905a1b25db6bb73791f58b4a157cc80535fd2e))
+
 ## [1.0.5](https://github.com/sanity-io/overlays/compare/v1.0.4...v1.0.5) (2023-09-05)
 
 ### Bug Fixes
